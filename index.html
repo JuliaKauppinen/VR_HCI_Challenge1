@@ -9,24 +9,21 @@
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
-    <a-scene background="color: #333333">
       <a-assets>
-          <img id="fox-texture" src="models/fox-texture.jpg" />
-          <a-asset-item id="fox-object" src="models/fox.obj"></a-asset-item>
-          <a-asset-item id="fox-mtl" src="models/fox.mtl"></a-asset-item>
+          <!-- <img id="fox-texture" src="models/fox-texture.jpg" /> -->
+          <a-asset-item id="tree-object" src="models/tree.obj"></a-asset-item>
+          <a-asset-item id="tree-mtl" src="models/tree.mtl"></a-asset-item>
           <!-- <a-asset-item id="" src="models/bestand.gltf"></a-asset-item> -->
           <img id="wood" src="img/wood.jpg" />
           <img id="wood2" src="img/wood2.jpg" />
-          <img id="grass" src="img/grass.jpg" />
       </a-assets>
       <a-entity environment></a-entity>
-      <a-entity environment="preset: volcano"></a-entity>
+      <a-entity environment="preset: forest"></a-entity>
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
 
       <a-obj-model 
-                  src="#fox-object"
-                  mtl="#fox-mtl"
-                  material="src: #fox-texture"
+                  src="#tree-object"
+                  mtl="#tree-mtl"
                   position="-4 3 8"
                   rotation="0 25 0"
                   scale="2 2 2">
@@ -67,6 +64,5 @@
         material="src: #wood"
         shadow>  
       </a-box>
-    </a-scene>
   </body>
 </html>
