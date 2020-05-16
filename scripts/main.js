@@ -1,3 +1,4 @@
+
 var rotationSpeed = 0.001;
 var myOtherBox = document.getElementById('myOtherBox');
 
