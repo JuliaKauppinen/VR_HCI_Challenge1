@@ -10,7 +10,7 @@
   <body>
     <a-scene background="color: #333333">
       <a-assets>
-          <a-asset-item id="fox-texture" src="models/fox-texture.jpg"></a-asset-item>
+          <img id="fox-texture" src="models/fox-texture.jpg" />
           <a-asset-item id="fox-object" src="models/fox.obj"></a-asset-item>
           <a-asset-item id="fox-mtl" src="models/fox.mtl"></a-asset-item>
           <!-- <a-asset-item id="" src="models/bestand.gltf"></a-asset-item> -->
@@ -24,6 +24,7 @@
       <a-obj-model 
                   src="#fox-object"
                   mtl="#fox-mtl"
+                  material="src: #fox-texture"
                   position="-4 0 5"
                   rotation="0 45 0"
                   scale="50 25 50">
