@@ -10,16 +10,9 @@
   <body>
     <a-scene background="color: #333333">
       <a-assets>
-          <img id="fox-texture" src="img/fox-texture.jpg" />
-          <a-asset-item id="fox" 
-                        src="models/fox.obj"
-                        position="-3 0 -5"  
-                        width="5" 
-                        height="3" 
-                        depth="2" 
-                        material="src: #fox-texture"
-                        shadow
-          ></a-asset-item>
+          <a-asset-item id="fox-texture" src="models/fox-texture.jpg"></a-asset-item>
+          <a-asset-item id="fox-object" src="models/fox.obj"></a-asset-item>
+          <a-asset-item id="fox-mtl" src="models/fox.mtl"></a-asset-item>
           <!-- <a-asset-item id="" src="models/bestand.gltf"></a-asset-item> -->
           <img id="wood" src="img/wood.jpg" />
           <img id="wood2" src="img/wood2.jpg" />
@@ -28,6 +21,13 @@
 
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
 
+      <a-obj-model 
+                  src="#fox-object"
+                  mtl="#fox-mtl"
+                  position="-4 0 5"
+                  rotation="0 45 0"
+                  scale="50 25 50">
+      </a-obj-model>
       <a-box id="myBox" 
         position="-1 1 -3" 
         rotation="0 45 0" 
