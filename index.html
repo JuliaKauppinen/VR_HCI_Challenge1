@@ -34,6 +34,8 @@
           <a-asset-item id="rocket3" src="models/rocket-fish3.gltf" ></a-asset-item>
           <a-asset-item id="skull" src="models/skull.obj" ></a-asset-item>
           <a-asset-item id="skull-mtl" src="models/skull.mtl" ></a-asset-item>
+          <a-asset-item id="rockbed" src="models/rockbed.obj" ></a-asset-item>
+          <a-asset-item id="rockbed-mtl" src="models/rockbed.mtl" ></a-asset-item>
       </a-assets>
       <a-entity environment></a-entity>
       <a-entity environment="preset: tron"></a-entity>
@@ -131,9 +133,16 @@
         <a-obj-model
           src="#skull"
           mtl="#skull-mtl"
-          position="10 0 9"
-          scale="0.2 0.2 0.2"
-          rotation="0 45 20">
+          position="10 -0.5 9"
+          scale="0.1 0.1 0.1"
+          rotation="0 0 20">
+        </a-obj-model>
+        <a-obj-model
+          src="#rockbed"
+          mtl="#rockbed-mtl"
+          position="30 0 -9"
+          scale="1 1 1"
+          rotation="0 0 0">
         </a-obj-model>
      <!--  <a-obj-model 
                   src="#tree-object"
