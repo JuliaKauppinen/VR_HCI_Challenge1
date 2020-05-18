@@ -27,6 +27,9 @@
           <a-asset-item id="yellow-fish" src="models/yellow-fish.gltf" ></a-asset-item>
           <a-asset-item id="minecraft" src="models/minecraft-fish.obj" ></a-asset-item>
           <a-asset-item id="minecraft-mtl" src="models/minecraft-fish.mtl" ></a-asset-item>
+          <a-asset-item id="beer" src="models/beer-fish.obj" ></a-asset-item>
+          <a-asset-item id="beer-mtl" src="models/beer-fish.mtl" ></a-asset-item>
+          <a-asset-item id="rocket" src="models/rocket-fish.gltf" ></a-asset-item>
       </a-assets>
       <a-entity environment></a-entity>
       <a-entity environment="preset: tron"></a-entity>
@@ -71,10 +74,29 @@
         <a-obj-model
           src="#minecraft"
           mtl="#minecraft-mtl"
-          position="-10 20 10"
-          material="src: #minecraft-texture"
+          position="-10 15 8"
+          material="src:#minecraft-texture"
           rotation="0 0 0">
         </a-obj-model>
+        <a-obj-model
+          src="#beer"
+          mtl="#beer-mtl"
+          position="-20 1 10"
+          rotation="0 30 0">
+        </a-obj-model>
+        <a-entity
+        gltf-model="#rocket"
+        position="10 2 -20"
+        rotation="0 45 0"
+        scale="0.2 0.2 0.2"
+        animation=
+        "dur:1500;
+        dir: alternate;
+        easing:easeInOutQuad;
+        from: 10 2 -20;
+        to: 20 2 -20;
+        loop: -1;
+        property: position;"></a-entity>
      <!--  <a-obj-model 
                   src="#tree-object"
                   mtl="#tree-mtl"
