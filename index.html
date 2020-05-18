@@ -15,6 +15,7 @@
           <!-- <a-asset-item id="tree-object" src="models/tree.obj"></a-asset-item>
           <a-asset-item id="tree-mtl" src="models/tree.mtl"></a-asset-item> -->
           <!-- <a-asset-item id="" src="models/bestand.gltf"></a-asset-item> -->
+          <img id="minecraft-texture" src="img/solid-yellow.svg.png"/>
           <a-asset-item id="ship" src="models/fishing-boat.obj" ></a-asset-item>
           <a-asset-item id="ship-mtl" src="models/fishing-boat.mtl" ></a-asset-item>
           <a-asset-item id="puffer" src="models/puffer-fish.obj" ></a-asset-item>
@@ -24,6 +25,8 @@
           <a-asset-item id="jellyfish" src="models/jelly-fish.obj" ></a-asset-item>
           <a-asset-item id="jellyfish-mtl" src="models/jelly-fish.mtl" ></a-asset-item>
           <a-asset-item id="yellow-fish" src="models/yellow-fish.gltf" ></a-asset-item>
+          <a-asset-item id="minecraft" src="models/minecraft-fish.obj" ></a-asset-item>
+          <a-asset-item id="minecraft-mtl" src="models/minecraft-fish.mtl" ></a-asset-item>
       </a-assets>
       <a-entity environment></a-entity>
       <a-entity environment="preset: tron"></a-entity>
@@ -54,9 +57,9 @@
         </a-obj-model>
         <a-entity
         gltf-model="#yellow-fish"
-        position="-5 5 15"
+        position="-5 5 50"
         rotation="0 45 0"
-        scale="0.2 0.2 0.2"
+        scale="0.02 0.02 0.02"
         animation=
         "dur:3000;
         dir: alternate;
@@ -65,6 +68,13 @@
         to: -10 5 15;
         loop: -1;
         property: position;"></a-entity>
+        <a-obj-model
+          src="#minecraft"
+          mtl="#minecraft-mtl"
+          position="-10 20 10"
+          material="src: #minecraft-texture"
+          rotation="0 0 0">
+        </a-obj-model>
      <!--  <a-obj-model 
                   src="#tree-object"
                   mtl="#tree-mtl"
