@@ -32,6 +32,8 @@
           <a-asset-item id="rocket" src="models/rocket-fish.gltf" ></a-asset-item>
           <a-asset-item id="rocket2" src="models/rocket-fish2.gltf" ></a-asset-item>
           <a-asset-item id="rocket3" src="models/rocket-fish3.gltf" ></a-asset-item>
+          <a-asset-item id="skull" src="models/skull.obj" ></a-asset-item>
+          <a-asset-item id="skull-mtl" src="models/skull.mtl" ></a-asset-item>
       </a-assets>
       <a-entity environment></a-entity>
       <a-entity environment="preset: tron"></a-entity>
@@ -84,6 +86,7 @@
           src="#beer"
           mtl="#beer-mtl"
           position="-20 1 10"
+          scale="0.02 0.02 0.02"
           rotation="0 30 0">
         </a-obj-model>
         <a-entity
@@ -125,6 +128,13 @@
         to: 20 3 -15;
         loop: -1;
         property: position;"></a-entity>
+        <a-obj-model
+          src="#skull"
+          mtl="#skull-mtl"
+          position="10 0 9"
+          scale="0.2 0.2 0.2"
+          rotation="0 45 20">
+        </a-obj-model>
      <!--  <a-obj-model 
                   src="#tree-object"
                   mtl="#tree-mtl"
