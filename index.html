@@ -17,15 +17,23 @@
           <!-- <a-asset-item id="" src="models/bestand.gltf"></a-asset-item> -->
           <a-asset-item id="ship" src="models/fishing-boat.obj" ></a-asset-item>
           <a-asset-item id="ship-mtl" src="models/fishing-boat.mtl" ></a-asset-item>
+          <a-asset-item id="puffer" src="models/puffer-fish.obj" ></a-asset-item>
+          <a-asset-item id="puffer-mtl" src="models/puffer-fish.mtl" ></a-asset-item>
       </a-assets>
       <a-entity environment></a-entity>
-      <a-entity environment="preset: forest"></a-entity>
+      <a-entity environment="preset: tron"></a-entity>
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
         <a-obj-model
           src="#ship"
           mtl="#ship-mtl"
           position="10 1 10"
           rotation="-70 0 0">
+        </a-obj-model>
+        <a-obj-model
+          src="#puffer"
+          mtl="#puffer-mtl"
+          position="2 3 2"
+          rotation="20 0 0">
         </a-obj-model>
      <!--  <a-obj-model 
                   src="#tree-object"
