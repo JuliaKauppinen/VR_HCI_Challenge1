@@ -11,17 +11,23 @@
   <body>
     <a-scene background="color: #333333">
       <a-assets>
-          <img id="wood" src="img/wood.jpg" />
-          <img id="wood2" src="img/wood2.jpg" />
-          <img id="grass" src="img/grass.jpg" />
-      </a-assets>
           <!-- <img id="fox-texture" src="models/fox-texture.jpg" /> -->
           <!-- <a-asset-item id="tree-object" src="models/tree.obj"></a-asset-item>
           <a-asset-item id="tree-mtl" src="models/tree.mtl"></a-asset-item> -->
           <!-- <a-asset-item id="" src="models/bestand.gltf"></a-asset-item> -->
+          <!-- <img id="ship-texture" src="boat-fishing.tga" /> -->
+          <a-asset-item id="ship" src="models/fishing-boat.obj" ></a-asset-item>
+          <a-asset-item id="ship-mtl" src="models/fishing-boat.mtl" ></a-asset-item>
+      </a-assets>
       <a-entity environment></a-entity>
       <a-entity environment="preset: tron"></a-entity>
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
+        <a-obj-model
+          src="#ship"
+          mtl="#ship-mtl"
+          position="2 5 4"
+          rotation="50 0 0">
+        </a-obj-model>
      <!--  <a-obj-model 
                   src="#tree-object"
                   mtl="#tree-mtl"
@@ -30,7 +36,7 @@
                   scale="2 2 2">
       </a-obj-model> -->
 
-      <a-box id="myBox" 
+<!--       <a-box id="myBox" 
         position="-1 1 -3" 
         rotation="0 45 0" 
         width="3" 
@@ -65,16 +71,7 @@
         depth="1" 
         material="src: #wood"
         shadow>  
-      </a-box>
-      <a-plane id="ground"
-        position="0 0 -4" 
-        rotation="-90 0 0" 
-        width="100" 
-        height="100" 
-        color="#7BC8A4" 
-        material="src: #grass; repeat: 10 10"
-        shadow>
-      </a-plane> 
+      </a-box> -->
     </a-scene>
   </body>
 </html>
