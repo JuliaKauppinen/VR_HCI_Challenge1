@@ -15,50 +15,32 @@
           <!-- <a-asset-item id="tree-object" src="models/tree.obj"></a-asset-item>
           <a-asset-item id="tree-mtl" src="models/tree.mtl"></a-asset-item> -->
           <!-- <a-asset-item id="" src="models/bestand.gltf"></a-asset-item> -->
-          <a-asset-item class="ship" src="models/fishing-boat.obj" ></a-asset-item>
+          <a-asset-item id="ship" src="models/fishing-boat.obj" ></a-asset-item>
           <a-asset-item class="ship-mtl" src="models/fishing-boat.mtl" ></a-asset-item>
-          <a-asset-item class="puffer" src="models/puffer-fish.obj" ></a-asset-item>
-          <a-asset-item class="puffer-mtl" src="models/puffer-fish.mtl" ></a-asset-item>
-          <a-asset-item class="puffer-purple" src="models/puffer-fish-purple.obj" ></a-asset-item>
-          <a-asset-item class="puffer-purple-mtl" src="models/puffer-fish-purple.mtl" ></a-asset-item>
+          <a-asset-item id="puffer" src="models/puffer-fish.obj" ></a-asset-item>
+          <a-asset-item id="puffer-mtl" src="models/puffer-fish.mtl" ></a-asset-item>
+          <a-asset-item id="puffer-purple" src="models/puffer-fish-purple.obj" ></a-asset-item>
+          <a-asset-item id="puffer-purple-mtl" src="models/puffer-fish-purple.mtl" ></a-asset-item>
       </a-assets>
       <a-entity environment></a-entity>
       <a-entity environment="preset: tron"></a-entity>
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
         <a-obj-model
-          src=".ship"
-          mtl=".ship-mtl"
-          position="-15 2 30"
-          rotation="-70 0 0">
-        </a-obj-model>
-        <a-obj-model
-          src=".ship"
-          mtl=".ship-mtl"
+          src="#ship"
+          mtl="#ship-mtl"
           position="10 2 10"
           rotation="-70 0 0">
         </a-obj-model>
         <a-obj-model
-          src=".puffer"
-          mtl=".puffer-mtl"
+          src="#puffer"
+          mtl="#puffer-mtl"
           position="2 1 5"
           rotation="0 180 0">
         </a-obj-model>
         <a-obj-model
-          src=".puffer"
-          mtl=".puffer-mtl"
-          position="2 1 5"
-          rotation="0 180 0">
-        </a-obj-model>
-        <a-obj-model
-          src=".puffer-purple"
-          mtl=".puffer-purple-mtl"
+          src="#puffer-purple"
+          mtl="#puffer-purple-mtl"
           position="-5 2 8"
-          rotation="0 270 0">
-        </a-obj-model>
-        <a-obj-model
-          src=".puffer-purple"
-          mtl=".puffer-purple-mtl"
-          position="15 2 15"
           rotation="0 270 0">
         </a-obj-model>
      <!--  <a-obj-model 
