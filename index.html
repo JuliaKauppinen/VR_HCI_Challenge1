@@ -31,8 +31,6 @@
           <a-asset-item id="beer" src="models/beer-fish.obj" ></a-asset-item>
           <a-asset-item id="beer-mtl" src="models/beer-fish.mtl" ></a-asset-item>
           <a-asset-item id="rocket" src="models/rocket-fish.gltf" ></a-asset-item>
-          <a-asset-item id="rocket2" src="models/rocket-fish2.gltf" ></a-asset-item>
-          <a-asset-item id="rocket3" src="models/rocket-fish3.gltf" ></a-asset-item>
           <a-asset-item id="skull" src="models/skull.obj" ></a-asset-item>
           <a-asset-item id="skull-mtl" src="models/skull.mtl" ></a-asset-item>
           <a-asset-item id="rockbed" src="models/rockbed.obj" ></a-asset-item>
@@ -57,18 +55,19 @@
           src="#ship"
           mtl="#ship-mtl"
           position="10 2 10"
-          rotation="-70 0 0">
+          rotation="-70 0 0"
+          scale="1.5 1.5 1.5">
         </a-obj-model>
         <a-obj-model
           src="#puffer"
           mtl="#puffer-mtl"
-          position="2 1 5"
+          position="2 4 5"
           rotation="0 180 0">
         </a-obj-model>
         <a-obj-model
           src="#puffer-purple"
           mtl="#puffer-purple-mtl"
-          position="-5 2 12"
+          position="-5 7 12"
           rotation="0 270 0">
         </a-obj-model>
         <a-obj-model
@@ -77,9 +76,45 @@
           position="0 5 10"
           rotation="0 180 0">
         </a-obj-model>
+        <a-obj-model
+          src="#jellyfish"
+          mtl="#jellyfish-mtl"
+          position="-4 5 10"
+          rotation="0 180 0">
+        </a-obj-model>
+        <a-obj-model
+          src="#jellyfish"
+          mtl="#jellyfish-mtl"
+          position="-8 5 10"
+          rotation="0 180 0">
+        </a-obj-model>
+        <a-obj-model
+          src="#jellyfish"
+          mtl="#jellyfish-mtl"
+          position="-12 5 10"
+          rotation="0 180 0">
+        </a-obj-model>
+        <a-obj-model
+          src="#jellyfish"
+          mtl="#jellyfish-mtl"
+          position="-13 7 10"
+          rotation="0 180 0">
+        </a-obj-model>
+        <a-obj-model
+          src="#jellyfish"
+          mtl="#jellyfish-mtl"
+          position="-6 9 9"
+          rotation="0 180 0">
+        </a-obj-model>
+        <a-obj-model
+          src="#jellyfish"
+          mtl="#jellyfish-mtl"
+          position="-2 5 12"
+          rotation="0 180 0">
+        </a-obj-model>
         <a-entity
         gltf-model="#yellow-fish"
-        position="-5 5 50"
+        position="-5 5 15"
         rotation="0 45 0"
         scale="0.02 0.02 0.02"
         animation=
@@ -90,6 +125,32 @@
         to: -10 5 15;
         loop: -1;
         property: position;"></a-entity>
+        <a-entity
+        gltf-model="#yellow-fish"
+        position="-1 7 12"
+        rotation="0 80 0"
+        scale="0.02 0.02 0.02"
+        animation=
+        "dur:4000;
+        dir: alternate;
+        easing:easeInOutQuad;
+        from: -1 7 12;
+        to: -8 7 12;
+        loop: -1;
+        property: position;"></a-entity>
+        <a-entity
+        gltf-model="#yellow-fish"
+        position="4 9 11"
+        rotation="0 25 0"
+        scale="0.02 0.02 0.02"
+        animation=
+        "dur:6000;
+        dir: alternate;
+        easing:easeInOutQuad;
+        from: 4 9 11;
+        to: 14 9 11;
+        loop: -1;
+        property: position;"></a-entity>
         <a-obj-model
           src="#minecraft"
           mtl="#minecraft-mtl"
@@ -98,11 +159,24 @@
           rotation="0 0 0">
         </a-obj-model>
         <a-obj-model
+          src="#minecraft"
+          mtl="#minecraft-mtl"
+          position="-20 15 5"
+          material="src:#minecraft-texture"
+          rotation="0 0 0">
+        <a-obj-model
           src="#beer"
           mtl="#beer-mtl"
-          position="-20 1 10"
-          scale="0.02 0.02 0.02"
+          position="-20 2 10"
+          scale="0.04 0.04 0.04"
           rotation="0 30 0">
+        </a-obj-model>
+        <a-obj-model
+          src="#beer"
+          mtl="#beer-mtl"
+          position="-15 4 8"
+          scale="0.04 0.04 0.04"
+          rotation="0 -45 0">
         </a-obj-model>
         <a-entity
         gltf-model="#rocket"
@@ -118,7 +192,7 @@
         loop: -1;
         property: position;"></a-entity>
         <a-entity
-        gltf-model="#rocket2"
+        gltf-model="#rocket"
         position="10 3 -15"
         rotation="0 45 0"
         scale="0.2 0.2 0.2"
@@ -131,7 +205,7 @@
         loop: -1;
         property: position;"></a-entity>
         <a-entity
-        gltf-model="#rocket3"
+        gltf-model="#rocket"
         position="-10 6 -8"
         rotation="0 45 0"
         scale="0.5 0.5 0.5"
@@ -158,24 +232,38 @@
           rotation="0 0 0">
         </a-obj-model>
         <a-obj-model
-          src="#coral-purple"
-          mtl="#coral-purple-mtl"
-          position="-30 0 4"
-          scale="5 5 5"
-          rotation="0 25 0">
+          src="#rockbed"
+          mtl="#rockbed-mtl"
+          position="-5 0 -9"
+          scale="8 8 8"
+          rotation="0 0 0">
+        </a-obj-model>
+        <a-obj-model
+          src="#rockbed"
+          mtl="#rockbed-mtl"
+          position="-10 0 -15"
+          scale="12 12 12"
+          rotation="0 0 0">
         </a-obj-model>
         <a-obj-model
           src="#coral-purple"
           mtl="#coral-purple-mtl"
-          position="-25 0 4"
+          position="-30 0 0"
+          scale="3 3 3"
+          rotation="0 45 0">
+        </a-obj-model>
+        <a-obj-model
+          src="#coral-purple"
+          mtl="#coral-purple-mtl"
+          position="-25 0 1"
           scale="5 5 5"
-          rotation="0 25 0">
+          rotation="0 35 0">
         </a-obj-model>
         <a-obj-model
           src="#coral-purple"
           mtl="#coral-purple-mtl"
           position="-20 0 2"
-          scale="5 5 5"
+          scale="7 7 7"
           rotation="0 25 0">
         </a-obj-model>
          <a-obj-model
@@ -184,6 +272,20 @@
           position="8 0 -4"
           scale="2 2 2"
           rotation="0 25 0">
+        </a-obj-model>
+        <a-obj-model
+          src="#coral-grass"
+          mtl="#coral-grass-mtl"
+          position="14 0 -7"
+          scale="4 4 4"
+          rotation="0 45 0">
+        </a-obj-model>
+        <a-obj-model
+          src="#coral-grass"
+          mtl="#coral-grass-mtl"
+          position="17 0 9"
+          scale="4 4 4"
+          rotation="0 45 0">
         </a-obj-model>
      <!--  <a-obj-model 
                   src="#tree-object"
