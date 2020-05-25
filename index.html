@@ -23,8 +23,8 @@
           <a-asset-item id="puffer-mtl" src="models/puffer-fish.mtl" ></a-asset-item>
           <a-asset-item id="puffer-purple" src="models/puffer-fish-purple.obj" ></a-asset-item>
           <a-asset-item id="puffer-purple-mtl" src="models/puffer-fish-purple.mtl" ></a-asset-item>
-          <a-asset-item id="jellyfish" src="models/jelly-fish.obj" ></a-asset-item>
-          <a-asset-item id="jellyfish-mtl" src="models/jelly-fish.mtl" ></a-asset-item>
+          <a-asset-item id="jellyfish" src="models/jelly-fish.gltf" ></a-asset-item>
+<!--           <a-asset-item id="jellyfish-mtl" src="models/jelly-fish.mtl" ></a-asset-item> -->
           <a-asset-item id="yellow-fish" src="models/yellow-fish.gltf" ></a-asset-item>
           <a-asset-item id="minecraft" src="models/minecraft-fish.obj" ></a-asset-item>
           <a-asset-item id="minecraft-mtl" src="models/minecraft-fish.mtl" ></a-asset-item>
@@ -84,12 +84,19 @@
         to: -4 8 10;
         loop: -1;
         property: position;"></a-entity>
-        </a-obj-model>
-<!--         <a-obj-model
-          src="#jellyfish"
-          mtl="#jellyfish-mtl"
-          position="-4 5 10"
-          rotation="0 180 0">
+        <a-entity
+        gltf-model="#jellyfish"
+        position="4 2 8"
+        rotation="0 180 0"
+        scale="0.02 0.02 0.02"
+        animation=
+        "dur:3000;
+        dir: alternate;
+        easing:easeInOutQuad;
+        from: 4 2 10;
+        to: 4 7 8;
+        loop: -1;
+        property: position;"></a-entity>
         </a-obj-model>
         <a-obj-model
           src="#jellyfish"
@@ -176,7 +183,7 @@
         <a-obj-model
           src="#beer"
           mtl="#beer-mtl"
-          position="-20 2 10"
+          position="-2 2 2"
           scale="0.04 0.04 0.04"
           rotation="0 30 0">
         </a-obj-model>
