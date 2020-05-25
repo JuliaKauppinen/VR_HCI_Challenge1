@@ -11,7 +11,7 @@
   <body>
     <a-scene background="color: #0A094F">
       <a-assets>
-          <img id="sand" src="img/sand.png" />
+          <img id="sand" src="img/sand.jpg" />
           <!-- <img id="fox-texture" src="models/fox-texture.jpg" /> -->
           <!-- <a-asset-item id="tree-object" src="models/tree.obj"></a-asset-item>
           <a-asset-item id="tree-mtl" src="models/tree.mtl"></a-asset-item> -->
@@ -45,9 +45,8 @@
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
         <a-plane id="sand"
         position="0 0 0" 
-        rotation="00 0 0" 
-        width="300" 
-        height="300" 
+        rotation="0 0 0" 
+        scale="30 30 30" 
         material="src:#sand; repeat: 200 200"
         shadow>
       </a-plane> 
