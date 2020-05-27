@@ -59,7 +59,7 @@
           src="#ship"
           mtl="#ship-mtl"
           position="-10 2 10"
-          rotation="0 0 0"
+          rotation="-70 0 45"
           scale="1.5 1.5 1.5">
         </a-obj-model>
         <a-obj-model
@@ -136,15 +136,15 @@
         property: position;"></a-entity>
         <a-entity
         gltf-model="#yellow-fish"
-        position="-1 5 3"
+        position="-1 7 3"
         rotation="0 90 0"
         scale="0.02 0.02 0.02"
         animation=
         "dur:4000;
         dir: alternate;
         easing:easeInOutQuad;
-        from: -1 5 3;
-        to: -10 5 3;
+        from: -1 7 3;
+        to: -10 7 3;
         loop: -1;
         property: position;"></a-entity>
         <a-entity
@@ -162,15 +162,15 @@
         property: position;"></a-entity>
         <a-entity
         gltf-model="#yellow-fish"
-        position="2 4 9"
+        position="2 4 1"
         rotation="0 -90 0"
         scale="0.02 0.02 0.02"
         animation=
         "dur:5000;
         dir: alternate;
         easing:easeInOutQuad;
-        from: 2 3 9;
-        to: -7 3 9;
+        from: 2 4 1;
+        to: -7 4 1;
         loop: -1;
         property: position;"></a-entity>
         <a-obj-model
@@ -191,15 +191,15 @@
         <a-obj-model
           src="#beer"
           mtl="#beer-mtl"
-          position="50 -9 -15"
-          scale="0.04 0.04 0.04"
-          rotation="0 30 0">
+          position="40 -9 -15"
+          scale="0.08 0.08 0.08"
+          rotation="0 60 0">
         </a-obj-model>
         <a-obj-model
           src="#beer"
           mtl="#beer-mtl"
           position="1 -12 -8"
-          scale="0.04 0.04 0.04"
+          scale="0.08 0.08 0.08"
           rotation="0 -45 0">
         </a-obj-model>
 
@@ -402,7 +402,7 @@
 
         <!-- eigen visje -->
         <a-cone
-        color="grey"
+        color="black"
         position="2 2 0"
         rotation="0 0 90"
         width="2"
@@ -417,6 +417,18 @@
         to: 2 2 9;
         loop: -1;
         property: position;"
+        animation__mouseenter="
+          property: components.material.material.color; 
+          type: color; 
+          to: #003333; 
+          startEvents: mouseenter; 
+          dur: 200;"
+        animation__mouseleave="
+          property: components.material.material.color; 
+          type: color; 
+          to: black; 
+          startEvents: mouseleave; 
+          dur: 200;"
         ></a-cone>
 <!--       <a-box id="myBox"
         position="-1 1 -3" 
