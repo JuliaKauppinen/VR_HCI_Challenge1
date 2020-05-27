@@ -414,7 +414,37 @@
         dir: alternate;
         easing:easeInOutQuad;
         from: 2 2 0;
-        to: 2 2 9;
+        to: 2 10 0;
+        loop: -1;
+        property: position;"
+        animation__mouseenter="
+          property: components.material.material.color; 
+          type: color; 
+          to: #66FF00; 
+          startEvents: mouseenter; 
+          dur: 200;"
+        animation__mouseleave="
+          property: components.material.material.color; 
+          type: color; 
+          to: black; 
+          startEvents: mouseleave; 
+          dur: 200;"
+        ></a-cone>
+
+        <a-cone
+        color="#131517"
+        position="5 5 -12"
+        rotation="0 0 90"
+        width="2"
+        height="2"
+        depth="2"
+        shadow
+        animation=
+        "dur:4000;
+        dir: alternate;
+        easing:easeInOutQuad;
+        from: 5 5 -12;
+        to: 2 -3 0;
         loop: -1;
         property: position;"
         animation__mouseenter="
